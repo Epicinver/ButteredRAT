@@ -55,7 +55,7 @@ except:
     pass
 
 def errorMsg():
-    ctypes.windll.user32.MessageBoxW(0, "The application was unable to start correctly (0xc000007b).\nClick OK to close the application", "Uncaught Error!", 0x20)
+    pass
 
 errorMsg()
 
@@ -766,6 +766,7 @@ By github.com/sillycodergirl
 By github.com/Epicinver
 
 """)
+
 
 
 bot.run(tokenencoded)
