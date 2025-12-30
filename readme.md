@@ -1,6 +1,9 @@
 # ButteredRAT (codenamed ESARrat)
 brat is a python rat lololololololol
 
+not gonna be updated bc i have a life
+
+
 Uh please star
 
 ## use for educational purposes only uwu
