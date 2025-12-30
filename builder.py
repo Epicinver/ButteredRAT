@@ -43,10 +43,10 @@ def build_bot():
         os.makedirs("build", exist_ok=True)
 
         # Copy base.py to build/main.py
-        shutil.copy("base.py", "build/main.py")
+        shutil.copy("base.pyw", "build/main.pyw")
 
         # Replace placeholders
-        main_file = "build/main.py"
+        main_file = "build/main.pyw"
         with open(main_file, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -56,7 +56,7 @@ def build_bot():
         with open(main_file, "w", encoding="utf-8") as f:
             f.write(content)
 
-        messagebox.showinfo("Success", f"build/main.py has been updated!\nOpening folder...")
+        messagebox.showinfo("Success", f"build/main.pyw has been updated!\nOpening folder...")
 
         # Open Explorer at build folder
         subprocess.Popen(f'explorer "{os.path.abspath("build")}"')
@@ -70,3 +70,4 @@ build_button.pack(pady=40)
 
 # ---------- RUN APP ----------
 app.mainloop()
+
